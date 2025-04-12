@@ -1,61 +1,159 @@
-# PolicyDecoderAI
+# PolicyDecoderAI: Civic AI Companion
 
-A powerful AI-enhanced civic education app that helps people understand government policies through ensemble learning and advanced language models.
+<div align="center">
+  <img src="assets/logo.png" alt="PolicyDecoderAI Logo" width="200"/>
+  <br/>
+  <strong>Making Policy Understanding Accessible to Everyone</strong>
+</div>
 
-## Features
+## 🎯 Mission
 
-- 🤖 Ensemble AI Analysis using multiple models (OpenAI GPT and Anthropic Claude)
-- 📚 High School Level Explanations
-- 📊 Multiple Analysis Modes
-- 📝 Document Upload and Processing
-- 🔄 Interactive Follow-up Questions
-- 📋 Session History Tracking
+PolicyDecoderAI transforms complex government policies into clear, actionable insights using advanced AI technology. Our mission is to bridge the gap between policy documents and public understanding, making civic education more accessible and engaging.
 
-## Setup
+## 🌟 Key Features
 
-1. Clone the repository:
+### 🤖 Ensemble AI Analysis
+- **Multi-Model Processing**: Leverages both OpenAI GPT and Anthropic Claude for comprehensive analysis
+- **Comparative Insights**: Highlights agreements and unique perspectives from different AI models
+- **Enhanced Accuracy**: Cross-validates interpretations for more reliable results
+
+### 📚 Educational Adaptation
+- **High School Level Explanations**: Adjusts complexity to be suitable for grades 9-12
+- **Technical Term Definitions**: Automatically defines policy jargon and complex terms
+- **Civic Education Integration**: Connects policies to standard high school government/civics concepts
+
+### 📊 Analysis Modes
+- **General Overview**: Quick summary and main points
+- **Implementation Details**: Step-by-step breakdown of policy execution
+- **Impact Analysis**: Effects on different stakeholders
+- **Compliance Check**: Key requirements and obligations
+
+### 💡 Smart Features
+- **Dynamic Follow-up Questions**: Contextual suggestions based on document content
+- **Progress Tracking**: Session history for continued learning
+- **Mobile-First Design**: Optimized for all devices
+- **Accessibility Focus**: Clear typography and intuitive navigation
+
+## 📱 Mobile-First Design
+
+### Responsive Layout
+- **Touch-Optimized**: Large, easy-to-tap buttons and controls
+- **Adaptive Design**: Seamlessly adjusts to any screen size
+- **Bottom Navigation**: Easy thumb access to key features
+- **Readable Typography**: Optimized font sizes and contrast
+
+### Performance
+- **Fast Loading**: Optimized for mobile networks
+- **Efficient Processing**: Smart resource management
+- **Offline Support**: Basic functionality without constant connection
+- **Progressive Loading**: Prioritizes essential content
+
+## 🛠️ Technical Features
+
+### Document Processing
+- **Multiple Formats**: Supports PDF, text, and pasted content
+- **Smart Chunking**: Efficient document splitting for analysis
+- **Context Preservation**: Maintains document structure and relationships
+- **Metadata Extraction**: Captures key document information
+
+### AI Implementation
+- **Ensemble Learning**: Combines multiple AI models
+- **Context-Aware**: Maintains document context in responses
+- **Error Handling**: Graceful fallbacks and clear error messages
+- **Response Synthesis**: Intelligent combination of model outputs
+
+### User Experience
+- **Interactive UI**: Real-time response and feedback
+- **Session Management**: Persistent history and preferences
+- **Accessibility**: WCAG 2.1 compliance
+- **Error Recovery**: Clear guidance for issue resolution
+
+## 🎓 Educational Impact
+
+### Learning Features
+- **Curriculum Alignment**: Matches high school civic education standards
+- **Progressive Complexity**: Adjustable explanation levels
+- **Real-World Connection**: Links policies to current events
+- **Interactive Learning**: Engagement through Q&A format
+
+### Use Cases
+- **Students**: Understanding civic policies and government
+- **Teachers**: Classroom policy analysis tool
+- **Citizens**: Staying informed about policies
+- **Professionals**: Quick policy insight generation
+
+## 🔒 Security & Privacy
+
+- **Data Protection**: Secure document handling
+- **API Security**: Protected API key management
+- **User Privacy**: Minimal data collection
+- **Compliance**: GDPR and CCPA adherence
+
+## 🚀 Getting Started
+
+### Prerequisites
 ```bash
+- Python 3.8+
+- OpenAI API key
+- Anthropic API key (optional)
+```
+
+### Installation
+```bash
+# Clone repository
 git clone https://github.com/mt-davis/pdecdoer.git
 cd pdecdoer
-```
 
-2. Install dependencies:
-```bash
+# Install dependencies
 pip install -r requirements.txt
+
+# Set up environment variables
+cp .env.example .env
+# Edit .env with your API keys
 ```
 
-3. Set up environment variables:
-Create a `.env` file with:
-```env
-OPENAI_API_KEY=your_openai_key
-ANTHROPIC_API_KEY=your_anthropic_key
-```
-
-4. Run the application:
+### Running the App
 ```bash
 streamlit run app.py
 ```
 
-## Project Structure
+## 🤝 Contributing
 
-- `/chains` - LangChain implementations
-- `/components` - Reusable UI components
-- `/pages` - Streamlit pages
-- `/utils` - Utility functions
-- `app.py` - Main application entry point
-
-## Usage
-
-1. Upload a policy document (PDF) or paste policy text
-2. Select analysis mode
-3. Toggle high school level explanations if needed
-4. Ask questions about the policy
-5. View ensemble analysis from multiple AI models
-
-## Contributing
+We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.md) for details.
 
 1. Fork the repository
 2. Create a feature branch
 3. Commit your changes
 4. Push to the branch
-5. Create a Pull Request
+5. Open a Pull Request
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgments
+
+- OpenAI for GPT API
+- Anthropic for Claude API
+- Streamlit for the web framework
+- Our contributors and supporters
+
+## 📬 Contact
+
+- GitHub Issues: [Create an issue](https://github.com/mt-davis/pdecdoer/issues)
+- Email: [contact@policydecoderAI.com](mailto:contact@policydecoderAI.com)
+
+## 🗺️ Roadmap
+
+### Upcoming Features
+- [ ] Multi-language support
+- [ ] Advanced document comparison
+- [ ] Collaborative analysis tools
+- [ ] API access for developers
+- [ ] Enhanced visualization options
+
+### Recent Updates
+- [x] High school level explanations
+- [x] Mobile-first redesign
+- [x] Ensemble AI analysis
+- [x] Interactive follow-up questions
