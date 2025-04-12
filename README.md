@@ -1,7 +1,6 @@
 # PolicyDecoderAI: Civic AI Companion
 
 <div align="center">
-  <img src="assets/logo.png" alt="PolicyDecoderAI Logo" width="200"/>
   <br/>
   <strong>Making Policy Understanding Accessible to Everyone</strong>
 </div>
