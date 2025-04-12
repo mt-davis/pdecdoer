@@ -15,7 +15,7 @@ from langchain_community.chat_models import ChatOpenAI
 from langchain_anthropic import ChatAnthropic
 
 openai_llm = ChatOpenAI(openai_api_key=openai_api_key)
-claude_llm = ChatAnthropic(anthropic_api_key=anthropic_api_key)
+claude_llm = ChatAnthropic(api_key=anthropic_api_key, model_name="claude-3-sonnet-20240229")
 
 
 def compare_policies(docs1, docs2, openai_api_key):
@@ -39,4 +39,8 @@ def compare_policies(docs1, docs2, openai_api_key):
     )
 
     chain = StuffDocumentsChain(llm=llm, prompt=prompt)
-    return chain.run(merged_docs)
+    response = chain.invoke(merged_docs)
+    # Extract the actual answer text if it's a dictionary
+    if isinstance(response, dict) and 'text' in response:
+        return response['text']
+    return response

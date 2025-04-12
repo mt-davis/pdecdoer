@@ -1,3 +1,10 @@
 .env
 __pycache__/
 *.pyc
+.venv/
+.streamlit/
+*.log
+.DS_Store
+.env.local
+.idea/
+.vscode/

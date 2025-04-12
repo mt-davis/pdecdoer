@@ -1,10 +1,18 @@
-from langchain.chat_models import ChatOpenAI
+from langchain_openai import ChatOpenAI
 from langchain.prompts import PromptTemplate
 from langchain_community.chat_models import ChatOpenAI
 from langchain_anthropic import ChatAnthropic
+import os
+from dotenv import load_dotenv
 
-openai_llm = ChatOpenAI(openai_api_key=openai_api_key)
-claude_llm = ChatAnthropic(anthropic_api_key=anthropic_api_key)
+# Load environment variables
+load_dotenv()
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+ANTHROPIC_API_KEY = os.getenv("ANTHROPIC_API_KEY")
+
+# Initialize models with API keys from environment
+openai_llm = ChatOpenAI(openai_api_key=OPENAI_API_KEY)
+claude_llm = ChatAnthropic(api_key=ANTHROPIC_API_KEY, model_name="claude-3-sonnet-20240229")
 
 import json
 
